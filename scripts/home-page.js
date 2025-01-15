@@ -42,6 +42,7 @@ function renderCourses(filter = 'all') {
         filteredCourses = courses.filter(course => course.code.startsWith('CSE'));
     }
 
+    const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
 
     filteredCourses.forEach(course => {
         const courseCard = document.createElement('div');
