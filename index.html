@@ -3,11 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd231 - Marco Salcedo</title>
+    <title>Home Page Project | WDD231 | Marco Salcedo</title>
+    <meta name="description" content="A personal webpage showcasing coursework, links, and certifications.">
+    <meta name="author" content="Marco Salcedo">
+    <link rel="stylesheet" href="styles/home-page.css">
+    <script src="scripts/home-page.js" defer></script>
 </head>
 <body>
-    <h>WDD231 - Marco Salcedo - Honduras</h>
-    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, provident?</P>
-    
+    <header>
+        <div class="header-container">
+            <img src="images/profile.webp" alt="Your Profile Picture" class="profile-pic">
+            <h1>Marco Salcedo</h1>
+        </div>
+        <nav>
+            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/marco-salcedo-b6b532269/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="courses">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Course 1</li>
+                <li>Course 2</li>
+                <li>Course 3</li>
+            </ul>
+        </section>
+
+        <section class="location">
+            <h2>Honduras, Cortes</h2>
+            <img src="images/cortes.webp" alt="Baobab Trees" class="location-img">
+            <p>Omoa, Cortes</p>
+        </section>
+
+        <section class="classes">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+                <button data-filter="all">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+            </div>
+            <div id="courses" class="courses-container">
+                <!-- Courses will be dynamically generated here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Marco Salcedo | Honduras</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
+
