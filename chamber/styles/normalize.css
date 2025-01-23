@@ -1,0 +1,115 @@
+/* Custom Normalize CSS */
+
+/* Reset margin and padding across all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set default font size for the body and inherit font family from body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensure heading elements are consistent */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Ensure consistent button and link styles */
+button, a {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Normalize form elements */
+input, button, select, textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+}
+
+/* Remove default list styles */
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Ensure block-level elements are correctly displayed */
+article, aside, details, figcaption, figure, footer, header, main, nav, section {
+  display: block;
+}
+
+/* Normalize anchor tags for consistent link behavior */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 3px solid #ffcc00; /* Add focus outline for accessibility */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Normalize the appearance of images */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+/* Normalize table styles for better readability */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+/* Normalize form controls */
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Normalize placeholder text for consistency */
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+
+/* Normalize responsiveness for mobile */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Adjust font size for mobile */
+  }
+}
