@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Inmobiliaria de Choloma",
+    "address": "123 Main St, Lopez",
+    "phone": "555-123-4567",
+    "website": "https://business1.com",
+    "image": "inmobiliaria.png",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Megapaca",
+    "address": "456 Elm St, Trinchera",
+    "phone": "555-987-6543",
+    "website": "https://business2.com",
+    "image": "megapaca.jpg",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Banco Popular",
+    "address": "789 Oak St, Sinor",
+    "phone": "555-567-8901",
+    "website": "https://business3.com",
+    "image": "popular.jpg",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Promasa",
+    "address": "101 Pine St, Japon",
+    "phone": "555-345-6789",
+    "website": "https://business4.com",
+    "image": "promasa.jpg",
+    "membershipLevel": "Member"
+  },
+  {
+    "name": "Coperativa Elga",
+    "address": "202 Maple St, Monte Rey",
+    "phone": "555-234-5678",
+    "website": "https://business5.com",
+    "image": "elga.jpg",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Gildan",
+    "address": "303 Cedar St, San Carlos",
+    "phone": "555-456-7890",
+    "website": "https://business6.com",
+    "image": "gildan.webp",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "La Mundial",
+    "address": "404 Birch St, Villa Mil",
+    "phone": "555-678-9012",
+    "website": "https://business7.com",
+    "image": "mundial.jpg",
+    "membershipLevel": "Member"
+  },
+  {
+    "name": "Farmacia Siman",
+    "address": "505 Aspen St, Las Pilas",
+    "phone": "555-789-0123",
+    "website": "https://business8.com",
+    "image": "siman.png",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Maseca",
+    "address": "606 Willow St, Colinas",
+    "phone": "555-890-1234",
+    "website": "https://business9.com",
+    "image": "maseca.jpg",
+    "membershipLevel": "Gold"
+  }
+]
+

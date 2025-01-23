@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover local businesses and organizations in our Chamber of Commerce directory.">
+  <meta name="author" content="Marco Salcedo">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce Directory">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/honduras2.jpg">
+  <meta property="og:url" content="https://yourwebsite.com/chamber/directory.html">
+  
+  <!-- Title -->
+  <title>Chamber of Commerce Directory</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  
+  <!-- JavaScript -->
+  <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="images/camaracomercio.png" alt="camara de comercio">
+      <h1>Choloma Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Discover</a></li>
+          <li><a href="#" class="active" aria-current="page">Directory</a></li>
+          <li><a href="#">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="directory-controls">
+      <h2>Our Members</h2>
+      <button id="toggleView">Toggle View</button>
+    </section>
+    <section class="directory">
+      <!-- Member cards will be dynamically loaded here -->
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact us: info@chamber.com | 504-963-6493</p>
+      <p>&copy; <span id="currentYear"></span> Marco Salcedo | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

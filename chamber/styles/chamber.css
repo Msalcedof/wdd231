@@ -1,0 +1,108 @@
+/* Normalize CSS */
+@import url('normalize.css');
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 1rem 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 10px;
+  padding: 5px  ;
+  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 25px;
+  padding: 5px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a[aria-current="page"] {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Main Content */
+.directory-controls {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.directory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.grid-view .card {
+  flex: 1 0 calc(33.33% - 1rem);
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.card.gold {
+  border-color: gold;
+}
+
+.card.silver {
+  border-color: silver;
+}
+
+/* Footer */
+footer {
+  background: #004d99;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer span {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
