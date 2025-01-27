@@ -1,4 +1,3 @@
-/* Normalize CSS */
 @import url('normalize.css');
 
 /* General Styles */
@@ -25,8 +24,7 @@ header .container {
 
 header h1 {
   margin: 10px;
-  padding: 5px  ;
-
+  padding: 5px;
 }
 
 nav ul {
@@ -76,8 +74,8 @@ nav ul li a[aria-current="page"] {
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  transform: translateY(-5px);
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 
@@ -103,7 +101,122 @@ footer {
   font-weight: bold;
 }
 
-/* Responsive Design */
+/* Hero Image */
+.hero {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #030c14;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+
+.cta-button:hover {
+  background-color: #003366;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Events and Weather Container */
+.events-weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Current Events Section */
+.current-events {
+  flex: 1;
+  min-width: 200px;
+  padding: 2rem;
+  background-color: #f4f4f4;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Weather Section */
+.weather {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather Box */
+.weather-box {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spotlight Cards */
+.spotlights {
+  padding: 2rem;
+  text-align: center;
+}
+
+.spotlight-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  color: #004d99;
+}
+
+.spotlight-cards .card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-cards .card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -118,5 +231,33 @@ footer {
 
   .card {
     width: 100%;
+  }
+
+  .weather-container {
+    flex-direction: column;
+  }
+
+  .weather-box {
+    min-width: 100%;
+  }
+
+  .spotlight-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .events-weather-container {
+    flex-direction: row;
+  }
+
+  .current-events,
+  .weather {
+    min-width: 48%;
   }
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to the Chamber of Commerce. Join us to connect, grow, and strengthen the local business community.">
+  <meta name="author" content="Marco Salcedo">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Chamber of Commerce">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://msalcedof.github.io/wdd231/chamber/images/honduras.webp">
+  <meta property="og:url" content="https://msalcedof.github.io/wdd231/chamber/index.html">
+  
+  <!-- Title -->
+  <title>Chamber of Commerce Home</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  
+  <!-- JavaScript -->
+  <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="images/camaracomercio.png" alt="Chamber of Commerce Logo">
+      <h1>Choloma Chamber of Commerce</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Image Section -->
+    <section class="hero">
+      <img src="images/honduras.webp" alt="Community Image" class="hero-image">
+      <div class="hero-text">
+        <h2>Welcome to Our Community</h2>
+        <p>Your hub for local business networking, events, and community growth.</p>
+        <a href="join.html" class="cta-button">Join Us Today</a>
+      </div>
+    </section>
+    
+
+  
+    <!-- Upcoming Events and Weather Section -->
+    <section class="events-weather-container">
+      <div class="current-events">
+        <h2>Upcoming Events</h2>
+        <p>Stay tuned for upcoming workshops, luncheons, and networking opportunities!</p>
+      </div>
+
+      <!-- Weather Section -->
+      <section class="weather" id="weather">
+        <h2>Weather in Choloma</h2>
+
+        <!-- Weather Content - Current Weather & 5-Day Forecast -->
+        <div class="weather-container">
+          <!-- Current Weather -->
+          <div id="current-weather" class="weather-box">
+            <p>Loading current weather...</p>
+          </div>
+
+          <!-- 5-Day Forecast -->
+          <div id="forecast" class="weather-box">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-day" id="forecast-day1">
+              <p>Day 1: Loading...</p>
+            </div>
+            <div class="forecast-day" id="forecast-day2">
+              <p>Day 2: Loading...</p>
+            </div>
+            <div class="forecast-day" id="forecast-day3">
+              <p>Day 3: Loading...</p>
+            </div>
+            <div class="forecast-day" id="forecast-day4">
+              <p>Day 4: Loading...</p>
+            </div>
+            <div class="forecast-day" id="forecast-day5">
+              <p>Day 5: Loading...</p>
+            </div>
+          </div>
+        </div>
+      </section> <!-- Closing the weather section -->
+    </section> <!-- Closing the events-weather-container section -->
+
+    <!-- Member Spotlights Section -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-cards">
+        <!-- Spotlight cards will be dynamically loaded here -->
+      </div>
+    </section>
+</main>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>Contact us: info@chamber.com | 504-963-6493</p>
+      <p>&copy; <span id="currentYear"></span> Marco Salcedo | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
