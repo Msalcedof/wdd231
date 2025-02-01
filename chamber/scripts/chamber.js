@@ -2,7 +2,6 @@
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
-
 // Fetch Members JSON Data (For Directory)
 async function fetchMembers() {
   try {
@@ -36,8 +35,6 @@ function displayMembers(members) {
     directory.innerHTML += memberCard;
   });
 }
-
-
 
 // Fetch Weather Data
 async function fetchWeather() {
@@ -172,10 +169,50 @@ function displaySpotlights(members) {
   spotlightContainer.innerHTML = spotlightCards;
 }
 
-// On page load
+// Timestamp, Modals and Animations
+document.getElementById('timestamp').value = new Date().toISOString();
+
+function showModal(modalId) {
+  document.getElementById(modalId).style.display = 'block';
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = 'none';
+}
 
 window.onload = () => {
+  document.getElementById('timestamp').value = new Date().toISOString();
   fetchWeather(); // Fetch the weather data
   fetchSpotlightMembers(); // Fetch the spotlight members
   fetchMembers(); // Also fetch the directory members
+
+  // Animation for membership cards
+  const cards = document.querySelectorAll('.membership-cards .card');
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.style.opacity = 1;
+      card.style.transform = 'translateY(0)';
+    }, index * 200);
+  });
 };
+
+// Extract and display form data on thankyou.html
+const params = new URLSearchParams(window.location.search);
+  if (document.getElementById('firstName')) {
+    document.getElementById('firstName').textContent = params.get('firstName');
+  }
+  if (document.getElementById('lastName')) {
+    document.getElementById('lastName').textContent = params.get('lastName');
+  }
+  if (document.getElementById('email')) {
+    document.getElementById('email').textContent = params.get('email');
+  }
+  if (document.getElementById('phone')) {
+    document.getElementById('phone').textContent = params.get('phone');
+  }
+  if (document.getElementById('orgName')) {
+    document.getElementById('orgName').textContent = params.get('orgName');
+  }
+  if (document.getElementById('timestamp')) {
+    document.getElementById('timestamp').textContent = params.get('timestamp');
+  };

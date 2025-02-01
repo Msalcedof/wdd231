@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="this is a thankyou page that will show up when the user submite the form information">
+    <meta name="author" content="Marco Salcedo">
+        
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Join Us">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://msalcedof.github.io/wdd231/chamber/images/honduras.webp">
+    <meta property="og:url" content="https://msalcedof.github.io/wdd231/chamber/thankyou.html">
+        
+    <!-- Title -->
+    <title>Chamber of Commercer Thankyou</title>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+        
+    <!-- JavaScript -->
+    <script src="scripts/chamber.js" defer></script>
+    </head>
+      
+    <body>
+        <header>
+        <div class="container">
+        <img src="images/camaracomercio.png" alt="camara de comercio">
+        <h1>Choloma Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+        </div>
+        </header>
+
+    <main>
+        <h1>Thank You for Joining Us!</h1>
+        <p>We have received your information and will contact you soon. Here are the details you provided:</p>
+        <ul>
+            <li><strong>First Name:</strong> <span id="firstName"></span></li>
+            <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+            <li><strong>Email:</strong> <span id="email"></span></li>
+            <li><strong>Mobile Phone:</strong> <span id="phone"></span></li>
+            <li><strong>Business/Organization Name:</strong> <span id="orgName"></span></li>
+            <li><strong>Submission Date:</strong> <span id="timestamp"></span></li>
+        </ul>
+    </main>
+
+    <footer>
+    <div class="container">
+        <p>Contact us: info@chamber.com | 504-963-6493</p>
+        <p>&copy; <span id="currentYear"></span> Marco Salcedo | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </footer>
+
+</body>
+</html>

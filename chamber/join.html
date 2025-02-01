@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Chamber of Commerce to connect with local businesses, enhance your network, and access exclusive resources. Sign up for one of our membership levels today and become part of a thriving community.">
+
+    <meta name="author" content="Marco Salcedo">
+        
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chamber of Commerce Join Us">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://msalcedof.github.io/wdd231/chamber/images/honduras.webp">
+    <meta property="og:url" content="https://msalcedof.github.io/wdd231/chamber/join.html">
+        
+    <!-- Title -->
+    <title>Chamber of Commerce Join Us</title>
+        
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+        
+    <!-- JavaScript -->
+    <script src="scripts/chamber.js" defer></script>
+    </head>
+      
+    <body>
+        <header>
+        <div class="container">
+            <img src="images/camaracomercio.png" alt="camara de comercio">
+            <h1>Choloma Chamber of Commerce</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html" class="active" aria-current="page">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+        </header>
+    <main>
+        <h1>Join Us</h1>
+        <form method="get" action="thankyou.html">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+
+            <label for="orgTitle">Organizational Title</label>
+            <input type="text" id="orgTitle" name="orgTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z-\s]{7,}">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+
+            <label for="phone">Mobile Phone</label>
+            <input type="tel" id="phone" name="phone" title="Mobile Phone" autocomplete="tel" required>
+
+            <label for="orgName">Business/Organization Name</label>
+            <input type="text" id="orgName" name="orgName" title="Business/Organization Name" autocomplete="organization" required>
+
+            <label for="membershipLevel">Membership Level</label>
+            <select id="membershipLevel" name="membershipLevel" title="Membership Level">
+                <option value="NP">NP Membership (No fee)</option>
+                <option value="Bronze">Bronze Membership</option>
+                <option value="Silver">Silver Membership</option>
+                <option value="Gold">Gold Membership</option>
+            </select>
+
+            <label for="description">Business/Organization Description</label>
+            <textarea id="description" name="description" title="Business/Organization Description"></textarea>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+            
+            <input type="submit" value="Join Us">
+        </form>
+
+        <div class="membership-cards">
+            <div class="card" id="np-card">
+                <h2>NP Membership</h2>
+                <p>No fee</p>
+                <button onclick="showModal('np-modal')">More Info</button>
+            </div>
+            <div class="card" id="bronze-card">
+                <h2>Bronze Membership</h2>
+                <button onclick="showModal('bronze-modal')">More Info</button>
+            </div>
+            <div class="card" id="silver-card">
+                <h2>Silver Membership</h2>
+                <button onclick="showModal('silver-modal')">More Info</button>
+            </div>
+            <div class="card" id="gold-card">
+                <h2>Gold Membership</h2>
+                <button onclick="showModal('gold-modal')">More Info</button>
+            </div>
+        </div>
+        
+        <!-- Modals -->
+        <div class="modal" id="np-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h2>NP Membership Benefits</h2>
+                <p>Ideal for non-profit organizations. This membership offers access to community events, networking opportunities, and basic listing in the directory.</p>
+            </div>
+        </div>
+        <div class="modal" id="bronze-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2>Bronze Membership Benefits</h2>
+                <p>$100/year: Designed for small businesses. Includes all NP Membership benefits plus promotional opportunities, social media mentions, and access to business workshops.</p>
+            </div>
+        </div>
+        <div class="modal" id="silver-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h2>Silver Membership Benefits</h2>
+                <p>$250/year: Perfect for growing businesses. Includes all Bronze Membership benefits plus a featured listing in the directory, priority event invitations, and member-to-member discounts.</p>
+            </div>
+        </div>
+        <div class="modal" id="gold-modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h2>Gold Membership Benefits</h2>
+                <p>$500/year: Best for established businesses. Includes all Silver Membership benefits plus premium advertising opportunities, exclusive event access, dedicated support, and a spotlight feature on the homepage.</p>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <div class="container">
+        <p>Contact us: info@chamber.com | 504-963-6493</p>
+        <p>&copy; <span id="currentYear"></span> Marco Salcedo | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+</footer>
+</body>
+</html>
