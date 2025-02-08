@@ -216,3 +216,33 @@ const params = new URLSearchParams(window.location.search);
   if (document.getElementById('timestamp')) {
     document.getElementById('timestamp').textContent = params.get('timestamp');
   };
+
+
+  //discover page//
+// Get the current date
+const currentDate = new Date();
+const currentTime = Date.now();
+
+// Retrieve the last visit date from localStorage
+let lastVisit = localStorage.getItem('lastVisit');
+if (!lastVisit) {
+  // If it's the first visit, show a welcome message
+  document.getElementById('visitMessage').textContent = 'Welcome! Let us know if you have any questions.';
+} else {
+  // Calculate the time difference in days
+  const timeDifference = Math.floor((currentTime - lastVisit) / (1000 * 3600 * 24));
+
+  if (timeDifference < 1) {
+    // If visited within a day
+    document.getElementById('visitMessage').textContent = 'Back so soon! Awesome!';
+  } else if (timeDifference === 1) {
+    // If it was 1 day ago
+    document.getElementById('visitMessage').textContent = 'You last visited 1 day ago.';
+  } else {
+    // If it was more than 1 day ago
+    document.getElementById('visitMessage').textContent = `You last visited ${timeDifference} days ago.`;
+  }
+}
+
+// Store the current visit date in localStorage
+localStorage.setItem('lastVisit', currentTime);

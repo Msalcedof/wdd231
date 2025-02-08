@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the highlights of our community through the Chamber of Commerce.">
+  <meta name="author" content="Marco Salcedo">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Discover Our Community">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://msalcedof.github.io/wdd231/chamber/images/honduras.webp">
+  <meta property="og:url" content="https://msalcedof.github.io/wdd231/chamber/discover.html">
+  
+  <!-- Title -->
+  <title>know Our Community</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/chamber.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(min-width: 641px) and (max-width: 1024px)">
+  
+  <!-- JavaScript -->
+  <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="images/camaracomercio.png" alt="Chamber of Commerce Logo">
+            <h1>Choloma Chamber of Commerce</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="discover-content">
+            <h2>Know Our Community</h2>
+            <div class="discover-grid">
+                <div class="item" style="grid-area: item1;">
+                <figure>
+                    <img src="images/ciudadcholoma1.webp" alt="Ciudad Choloma" width="300" height="200">
+                </figure>
+                <h2>Ciudad Choloma</h2>
+                <address>Barrio El Centro, Choloma, Cortés, Honduras</address>
+                <p>The heart of Choloma, offering a mix of urban and rural life, vibrant markets, and local businesses.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item2;">
+                <figure>
+                    <img src="images/santarosa2.webp" alt="Colonia Santa Rosa" width="300" height="200">
+                </figure>
+                <h2>Colonia Santa Rosa</h2>
+                <address>Colonia Santa Rosa, Choloma, Cortés, Honduras</address>
+                <p>A peaceful residential area with several parks and local cafes, known for its community atmosphere.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item3;">
+                <figure>
+                    <img src="images/villanueva3.webp" alt="Colonia Villa Nueva" width="300" height="200">
+                </figure>
+                <h2>Colonia Villa Nueva</h2>
+                <address>Colonia Villa Nueva, Choloma, Cortés, Honduras</address>
+                <p>A growing neighborhood with several schools, small businesses, and green spaces perfect for outdoor activities.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item4;">
+                <figure>
+                    <img src="images/losandes4.webp" alt="Colonia Los Andes" width="300" height="200">
+                </figure>
+                <h2>Colonia Los Andes</h2>
+                <address>Colonia Los Andes, Choloma, Cortés, Honduras</address>
+                <p>A family-oriented area with easy access to the main highway and shopping centers.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item5;">
+                <figure>
+                    <img src="images/elpolvorin5.webp" alt="Colonia El Polvorín" width="300" height="200">
+                </figure>
+                <h2>Colonia El Polvorín</h2>
+                <address>Colonia El Polvorín, Choloma, Cortés, Honduras</address>
+                <p>Known for its rich history and the proximity to Choloma industrial district, popular for its local stores.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item6;">
+                <figure>
+                    <img src="images/brisasdelvalle6.webp" alt="Colonia Brisas del Valle" width="300" height="200">
+                </figure>
+                <h2>Colonia Brisas del Valle</h2>
+                <address>Colonia Brisas del Valle, Choloma, Cortés, Honduras</address>
+                <p>A modern residential area with well-maintained streets and homes, popular with middle-class families.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item7;">
+                <figure>
+                    <img src="images/laceiba7.webp" alt="Colonia La Ceiba" width="300" height="200">
+                </figure>
+                <h2>Colonia La Ceiba</h2>
+                <address>Colonia La Ceiba, Choloma, Cortés, Honduras</address>
+                <p>A neighborhood close to the town center, offering easy access to nearby commercial areas and public transportation.</p>
+                <button>Learn More</button>
+                </div>
+            
+                <div class="item" style="grid-area: item8;">
+                <figure>
+                    <img src="images/elmango8.webp" alt="Barrio El Mango" width="300" height="200">
+                </figure>
+                <h2>Barrio El Mango</h2>
+                <address>Barrio El Mango, Choloma, Cortés, Honduras</address>
+                <p>A quiet and traditional area with small family-owned businesses, perfect for those looking for a more laid-back lifestyle.</p>
+                <button>Learn More</button>
+                </div>
+            </div>
+          
+                            
+        
+        </section>
+
+        <!-- Visitor Information Message -->
+        <aside id="visitMessage" class="visitor-message"></aside>
+    </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+    <p>Contact us: info@chamber.com | 504-963-6493</p>
+    <p>&copy; <span id="currentYear"></span> Marco Salcedo | WDD 231 | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>
+
