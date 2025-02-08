@@ -1,6 +1,4 @@
 @import url('normalize.css');
-@import url('medium.css');
-
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
@@ -431,19 +429,6 @@ form input[type="submit"]:hover {
 @media (min-width: 641px) {
   .item img:hover {
     transform: scale(1.05);
-  }
-}
-
-/* Medium screens (641px to 1024px) */
-@media (min-width: 641px) and (max-width: 1024px) {
-  
-  .discover-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-    grid-template-areas: 
-      "item1 item2"
-      "item3 item4"
-      "item5 item6"
-      "item7 item8";
   }
 }
 
