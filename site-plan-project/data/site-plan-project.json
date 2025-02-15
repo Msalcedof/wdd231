@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Concrete Houses",
+        "description": "Sustainable, durable, and cost-effective homes.",
+        "duration": "6 months",
+        "cost": "200000",
+        "location": "Various locations",
+        "images": [
+            "images/concretehouse1.webp",
+            "images/concretehouse2.webp"
+        ]
+    },
+    {
+        "name": "Remodeling",
+        "description": "Modernize and enhance your living space.",
+        "duration": "3 months",
+        "cost": "30000",
+        "location": "Residential areas",
+        "images": [
+            "images/remodeling1.webp",
+            "images/remodeling2.webp"
+        ]
+    },
+    {
+        "name": "Welding",
+        "description": "Expert welding services for structural reinforcement.",
+        "duration": "2 months",
+        "cost": "5000",
+        "location": "Commercial and residential",
+        "images": [
+            "images/welding1.webp",
+            "images/welding2.webp"
+        ]
+    },
+    {
+        "name": "Zinc Roofing",
+        "description": "Long-lasting and rust-resistant roofing solutions.",
+        "duration": "1 month",
+        "cost": "15000",
+        "location": "All locations",
+        "images": [
+            "images/zincroofing.webp",
+            "images/zincroofing2.webp"
+        ]
+    },
+    {
+        "name": "Ceiling Products",
+        "description": "Innovative ceiling solutions for aesthetic and energy-efficient designs.",
+        "duration": "2 months",
+        "cost": "10000",
+        "location": "Various locations",
+        "images": [
+            "images/ceiling3.webp",
+            "images/ceiling2.webp"
+        ]
+    }
+]
